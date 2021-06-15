@@ -20,7 +20,7 @@ The training scripts are provided in the folder [training_scripts](https://githu
 ```bash
 $ sh training_scripts/pretrain.sh
 ```
-Then, run other scripts for the finetuning. For example, to finetune the NAT model with the BoN-L1(N=2) objective, run:
+Then, run other scripts for the finetuning. For example, to finetune the NAT model with the BoN-L1 objective, run:
 ```bash
 $ sh training_scripts/bag2grams.sh
 ```
