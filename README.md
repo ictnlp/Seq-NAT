@@ -7,6 +7,10 @@ Dependencies
 * Python 3.8
 * PyTorch 1.7
 
+Dataset
+------------------
+First, follow the [instructions to download and preprocess the WMT'14 En-De dataset](../translation#prepare-wmt14en2desh).
+Make sure to learn a joint vocabulary by passing the `--joined-dictionary` option to `fairseq-preprocess`.
 
 Knowledge Distillation
 ------------------
