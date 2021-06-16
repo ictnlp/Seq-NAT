@@ -1,6 +1,6 @@
 Source code for &lt;Sequence-Level Training for Non-Autoregressive Neural Machine Translation>.
 ==================================
-PyTorch implementation of the methods described in the paper [Sequence-Level Training for Non-Autoregressive Neural Machine Translation](). The code is based on fairseq v0.9.0. We only modified [nat_loss.py](https://github.com/ictnlp/Seq-NAT/blob/main/fairseq/criterions/nat_loss.py) and [utils.py](https://github.com/ictnlp/Seq-NAT/blob/main/fairseq/utils.py).
+PyTorch implementation of the methods described in the paper [Sequence-Level Training for Non-Autoregressive Neural Machine Translation](https://arxiv.org/pdf/2106.08122.pdf). The code is based on fairseq v0.9.0. We only modified [nat_loss.py](https://github.com/ictnlp/Seq-NAT/blob/main/fairseq/criterions/nat_loss.py) and [utils.py](https://github.com/ictnlp/Seq-NAT/blob/main/fairseq/utils.py).
 
 Dependencies
 ------------------
@@ -40,5 +40,12 @@ Citation
 ------------------
 If you find the resources in this repository useful, please consider citing:
 ```
-
+@misc{shao2021sequencelevel,
+      title={Sequence-Level Training for Non-Autoregressive Neural Machine Translation}, 
+      author={Chenze Shao and Yang Feng and Jinchao Zhang and Fandong Meng and Jie Zhou},
+      year={2021},
+      eprint={2106.08122},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
