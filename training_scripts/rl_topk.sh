@@ -3,7 +3,7 @@ mkdir output/rl_topk
 cp output/pretrain/checkpoint_last.pt output/rl_topk/
 save_dir=output/rl_topk
 CUDA_VISIBLE_DEVICES=0 python train.py $data_dir \
-    --src-embedding-copy --ddp-backend=no_c10d --save-dir $save_dir \
+    --left-pad-source False --src-embedding-copy --ddp-backend=no_c10d --save-dir $save_dir \
     --task translation_lev \
     --criterion nat_seq_loss \
     --use-rl --rl-type topk --topk 5 --reset-optimizer\
