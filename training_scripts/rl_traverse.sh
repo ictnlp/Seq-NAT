@@ -3,7 +3,7 @@ mkdir output/rl_traverse
 cp output/pretrain/checkpoint_last.pt output/rl_traverse/
 save_dir=output/rl_traverse
 CUDA_VISIBLE_DEVICES=0 python train.py $data_dir \
-    --src-embedding-copy --ddp-backend=no_c10d --save-dir $save_dir \
+    --left-pad-source False --src-embedding-copy --ddp-backend=no_c10d --save-dir $save_dir \
     --task translation_lev \
     --criterion nat_seq_loss \
     --use-rl --rl-type traverse  --reset-optimizer\
