@@ -1,7 +1,7 @@
 data_dir=data-bin/wmt14_en_de_distill
 save_dir=output/pretrain
 CUDA_VISIBLE_DEVICES=0 python train.py $data_dir \
-    --src-embedding-copy --fp16 --ddp-backend=no_c10d --save-dir $save_dir \
+    --left-pad-source False  --src-embedding-copy --fp16 --ddp-backend=no_c10d --save-dir $save_dir \
     --task translation_lev \
     --criterion nat_loss \
     --arch nonautoregressive_transformer \
