@@ -3,7 +3,7 @@ mkdir output/bagwords
 cp output/pretrain/checkpoint_last.pt output/bagwords/
 save_dir=output/bagwords
 CUDA_VISIBLE_DEVICES=0 python train.py $data_dir \
-    --src-embedding-copy --fp16 --ddp-backend=no_c10d --save-dir $save_dir \
+    --left-pad-source False --src-embedding-copy --fp16 --ddp-backend=no_c10d --save-dir $save_dir \
     --task translation_lev \
     --criterion nat_seq_loss \
     --use-ngram --n 1 --p 1 --reset-optimizer\
