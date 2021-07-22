@@ -6,6 +6,7 @@ CUDA_VISIBLE_DEVICES=4 python generate.py data-bin/wmt14_en_de_distill \
     --iter-decode-eos-penalty 0 \
     --path $model \
     --beam 1  \
+    --left-pad-source False \
     --batch-size 1 > out
 # because fairseq's output is unordered, we need to recover its order
 grep ^H out | cut -f1,3- | cut -c3- | sort -k1n | cut -f2- > out.de
