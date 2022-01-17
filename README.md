@@ -1,6 +1,6 @@
 Source code for &lt;Sequence-Level Training for Non-Autoregressive Neural Machine Translation>.
 ==================================
-PyTorch implementation of the methods described in the paper [Sequence-Level Training for Non-Autoregressive Neural Machine Translation](https://arxiv.org/pdf/2106.08122.pdf). The code is based on fairseq v0.9.0. We only modified [nat_loss.py](https://github.com/ictnlp/Seq-NAT/blob/main/fairseq/criterions/nat_loss.py) and [utils.py](https://github.com/ictnlp/Seq-NAT/blob/main/fairseq/utils.py).
+PyTorch implementation of the methods described in the Computational Linguistics 2021 paper [Sequence-Level Training for Non-Autoregressive Neural Machine Translation](https://arxiv.org/pdf/2106.08122.pdf). The code is based on fairseq v0.9.0. We only modified [nat_loss.py](https://github.com/ictnlp/Seq-NAT/blob/main/fairseq/criterions/nat_loss.py) and [utils.py](https://github.com/ictnlp/Seq-NAT/blob/main/fairseq/utils.py).
 
 Dependencies
 ------------------
@@ -40,12 +40,18 @@ Citation
 ------------------
 If you find the resources in this repository useful, please consider citing:
 ```
-@misc{shao2021sequencelevel,
-      title={Sequence-Level Training for Non-Autoregressive Neural Machine Translation}, 
-      author={Chenze Shao and Yang Feng and Jinchao Zhang and Fandong Meng and Jie Zhou},
-      year={2021},
-      eprint={2106.08122},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@article{10.1162/coli_a_00421,
+    author = {Shao, Chenze and Feng, Yang and Zhang, Jinchao and Meng, Fandong and Zhou, Jie},
+    title = "{Sequence-Level Training for Non-Autoregressive Neural Machine Translation}",
+    journal = {Computational Linguistics},
+    volume = {47},
+    number = {4},
+    pages = {891-925},
+    year = {2021},
+    month = {12},
+    issn = {0891-2017},
+    doi = {10.1162/coli_a_00421},
+    url = {https://doi.org/10.1162/coli\_a\_00421},
+    eprint = {https://direct.mit.edu/coli/article-pdf/47/4/891/1979393/coli\_a\_00421.pdf},
 }
 ```
